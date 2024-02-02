@@ -66,3 +66,23 @@ for(i=0;i<=m;i++){
 
     return 0;
 }
+
+// abbcdgf
+// bbadcgf
+// 0 0 0 0 0 0 0 0
+// 0 U U D L L L L
+// 0 D D U U U U U
+// 0 D D L L L L L
+// 0 U U U U D L L
+// 0 U U U D U U U
+// 0 U U U U U D L
+// 0 U U U U U U D 
+// new table
+// 0 0 0 0 0 0 0 0
+// 0 0 0 1 1 1 1 1
+// 0 1 1 1 1 1 1 1
+// 0 1 2 2 2 2 2 2
+// 0 1 2 2 2 3 3 3
+// 0 1 2 2 3 3 3 3
+// 0 1 2 2 3 3 4 4 
+// 0 1 2 2 3 3 4 5
