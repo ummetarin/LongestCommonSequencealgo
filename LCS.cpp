@@ -6,6 +6,7 @@ int main(){
    
    int i,j,m,n,to_cost=0;
    string x,y;
+   cin>>x>>y;
    m=x.size();
    n=y.size();
    int c[m+1][n+1];
@@ -44,7 +45,20 @@ int main(){
     }
  }
 
+for(i=0;i<=m;i++){
+    for(j=0;j<=n;j++){
+        cout<<b[i][j]<<" ";
+    }
+    cout<<endl;
+}
+cout<<"new table"<<endl;
 
+for(i=0;i<=m;i++){
+    for(j=0;j<=n;j++){
+        cout<<c[i][j]<<" ";
+    }
+    cout<<endl;
+}
 
 
 
