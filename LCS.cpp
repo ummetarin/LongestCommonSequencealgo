@@ -5,13 +5,15 @@ using namespace std;
 int main(){
    
    int i,j,m,n,to_cost=0;
+// taking two string x and y
    string x,y;
    cin>>x>>y;
+ //m is size of x and n is size of y    
    m=x.size();
    n=y.size();
    int c[m+1][n+1];
    char b[m+1][n+1];
-
+// initialize 1st row and 1st column as 0
    for(i=0;i<=m;i++){
     c[i][0]=0;
    }
@@ -44,7 +46,7 @@ int main(){
         }
     }
  }
-
+// output table b
 for(i=0;i<=m;i++){
     for(j=0;j<=n;j++){
         cout<<b[i][j]<<" ";
@@ -52,7 +54,7 @@ for(i=0;i<=m;i++){
     cout<<endl;
 }
 cout<<"new table"<<endl;
-
+// output table c
 for(i=0;i<=m;i++){
     for(j=0;j<=n;j++){
         cout<<c[i][j]<<" ";
