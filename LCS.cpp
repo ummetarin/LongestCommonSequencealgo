@@ -26,7 +26,23 @@ int main(){
     b[0][j]='0';
    }
 
-
+ //   main task
+ for(i=1;i<=m;i++){
+    for(j=1;j<=n;j++){
+        if(x[i-1]==y[j-1]){
+            c[i][j]=c[i-1][j-1]+1;
+            b[i][j]='D';
+        }
+        else if(c[i-1][j]>=c[i][j-1]){
+            c[i][j]=c[i-1][j];
+            b[i][j]='U';
+        }
+        else{
+            c[i][j]=c[i][j-1];
+            b[i][j]='L';
+        }
+    }
+ }
 
 
 
